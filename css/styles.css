@@ -621,13 +621,14 @@ img {
 
 .modal-close-btn:hover,
 .modal-close-btn:focus {
-    border-color: #404BBF;
+    background-color: #404BBF;
     border: none;
     fill: #ffffff;
 }
 
 .modal-close-btn-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    top: 50%;
 }
 
 .icon-cross {
@@ -776,7 +777,8 @@ img {
 .review-form-privacy-checbox:checked+.review-form-checkbox-label .review-form-own-checkbox {
     width: 16px;
     height: 16px;
-    background-color: #4D5AE5;
+    background-color: #404BBF;
+    border: none;
     fill: #F4F4FD;
 }
 
