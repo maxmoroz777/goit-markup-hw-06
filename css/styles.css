@@ -636,7 +636,11 @@ img {
     padding: 24px;
 }
 
-.modal-close-btn-icon:hover,
+.modal-close-btn-icon:hover {
+    background-color: #404bbf;
+    fill: #ffffff;
+}
+
 .modal-close-btn-icon:focus {
     background-color: #404bbf;
     fill: #ffffff;
@@ -659,11 +663,6 @@ img {
 
 .review-form {
     max-width: 360px;
-}
-
-.review-form-field-icon {
-    top: 50%;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .review-form-wraper {
@@ -716,6 +715,7 @@ img {
     top: 50%;
     left: 16px;
     transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .review-form-masage {
