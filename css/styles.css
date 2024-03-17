@@ -698,7 +698,6 @@ img {
 
 .review-form-input:focus+.review-form-icon {
     fill: #4D5AE5;
-    top: 50%;
 }
 
 .review-form-input-wraper:focus-within {
