@@ -417,7 +417,6 @@ img {
 
 .sect-four-list-item:hover .overlay {
     transform: translateY(0%);
-    /* transition: transform 500ms; */
 }
 
 
