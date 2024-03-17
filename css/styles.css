@@ -691,10 +691,12 @@ img {
 .review-form-field-icon {
     position: absolute;
     left: 16px;
-    top: 50%;
-    top: 50%;
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.review-form-field-icon {
+    top: 50%;
 }
 
 .review-form-input:focus {
@@ -811,7 +813,6 @@ img {
 .review-form-submit-button {
     display: block;
     margin: auto;
-    margin-bottom: 24px;
     border-radius: 4px;
     min-width: 169px;
     height: 56px;
