@@ -669,6 +669,14 @@ img {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
+.review-form-input:focus {
+    border: 1px solid #4d5ae5;
+    border-radius: 4px;
+    border-color: #4d5ae5;
+    outline: transparent;
+
+}
+
 .review-form-label {
     display: block;
     font-size: 12px;
@@ -678,6 +686,12 @@ img {
     margin-bottom: 4px;
 }
 
+/* .review-form-input-wraper:focus-within {
+    border: 1px solid #4d5ae5;
+    border-radius: 4px;
+    width: 360px;
+    height: 40px;
+} */
 
 .review-form-input-wraper {
     position: relative;
