@@ -678,12 +678,6 @@ img {
     margin-bottom: 4px;
 }
 
-.review-form-input-wraper:focus-within {
-    border: 1px solid #4d5ae5;
-    border-radius: 4px;
-    width: 360px;
-    height: 40px;
-}
 
 .review-form-input-wraper {
     position: relative;
