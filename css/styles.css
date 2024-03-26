@@ -88,6 +88,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: 320px;
 }
 
 .logo {
@@ -124,6 +125,7 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 320px;
+    max-height: 432px;
     background-position: center;
     margin: 0 auto;
     margin-bottom: 96px;
@@ -185,6 +187,8 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    max-width: 288px;
+    margin: 0 auto;
 }
 
 .section-three-mobile {
@@ -255,6 +259,7 @@ img {
     flex-flow: column;
     align-items: center;
     justify-content: center;
+    padding-bottom: 96px;
 }
 
 .header-sect-four-mobile {
@@ -292,7 +297,7 @@ img {
     margin-top: 32px;
 }
 
-.sekt-four-parag {
+.sect-four-parag {
 
     font-weight: 400;
     font-size: 16px;
@@ -300,6 +305,7 @@ img {
     letter-spacing: 0.02em;
     color: #434455;
     margin-top: 8px;
+    margin-bottom: 32px;
 }
 
 .footer {
@@ -309,6 +315,7 @@ img {
 
 .container-footer {
     width: 288px;
+    margin: 0 auto;
 }
 
 .footer-content {
