@@ -21,6 +21,7 @@
         <div class="container  page-header-container">
             <nav class="nav">
                 <a class="logo" href="./index.html">Web<span class="top-logo-end">Studio</span></a>
+
                 <ul class="nav-list">
                     <li>
                         <a class="nav-list-link nav-list-link-one" href="./index.html">Studio</a>
@@ -38,12 +39,13 @@
                     <use href="./images/icons.svg#mobile-menu-icon"></use>
                 </svg>
             </button>
-            <!-- <address class="address">
+
+            <address class="address">
                 <ul class="address-list">
                     <li><a class="contacts" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                     <li><a class="contacts" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
                 </ul>
-            </address> -->
+            </address>
         </div>
     </header>
     <main>
@@ -99,10 +101,10 @@
 
         <section class="section section-three-mobile">
             <div class="container container-sec-three">
-                <h2 class="header-sect">Our Team</h2>
+                <h2 class="section-three-header">Our Team</h2>
                 <ul class="section-three-list">
                     <li class="section-three-list-item section-three-list-item-1">
-                        <img src="./images/img1.jpg" alt="Mark Guerrero" />
+                        <img srcset="./images/mark@2x.jpg 2x" src="./images/mark.jpg" alt="Mark Guerrero" />
                         <div class="worker-info">
                             <h3 class="section-three-list-header-mobile">Mark Guerrero</h3>
                             <p class="section-three-parag">Product Designer</p>
@@ -136,7 +138,7 @@
                         </div>
                     </li>
                     <li class="section-three-list-item section-three-list-item-1">
-                        <img src="./images/img2.jpg" alt="Tom Ford" />
+                        <img srcset="./images/tom@2x.jpg 2x" src="./images/tom.jpg" alt="Tom Ford" />
                         <div class="worker-info">
                             <h3 class="section-three-list-header-mobile">Tom Ford</h3>
                             <p class="section-three-parag">Frontend Developer</p>
@@ -171,7 +173,7 @@
                         </div>
                     </li>
                     <li class="section-three-list-item section-three-list-item-1">
-                        <img src="./images/img3.jpg" alt="Camila Garcia" />
+                        <img srcset="./images/camila@2x.jpg 2x" src="./images/camila.jpg" alt="Camila Garcia" />
                         <div class="worker-info">
                             <h3 class="section-three-list-header-mobile">Camila Garcia</h3>
                             <p class="section-three-parag">Marketing</p>
@@ -206,7 +208,7 @@
                         </div>
                     </li>
                     <li class="section-three-list-item section-three-list-item-1">
-                        <img src="./images/img4.jpg" alt="Daniel Wilson" />
+                        <img srcset="./images/daniel@2x.jpg 2x" src="./images/daniel.jpg" alt="Daniel Wilson" />
                         <div class="worker-info">
                             <h3 class="section-three-list-header-mobile">Daniel Wilson</h3>
                             <p class="section-three-parag">UI Designer</p>
@@ -252,18 +254,31 @@
                 <ul class="section-four-list-mobile">
                     <li class="sect-four-list-item">
                         <div class="overlay-parent-sec-four">
-                            <img src="./images/Bank-mobile.jpg" alt="Banking app" />
-
+                            <picture>
+                                <sourse srcset="./images/banking-dt.jpg 1x" media="(min-width: 1158px)" />
+                                <sourse srcset="./images/banking-tablet.jpg 1x, ./images/banking-tablet@2x.jpg 2x"
+                                    media="(min-width: 768px)" />
+                                <sourse srcset="./images/banking-mobile.jpg 1x, ./images/banking-mobile@2x.jpg 2x"
+                                    media="(max-width: 767px)" />
+                                <img src="" alt="Banking app" />
+                            </picture>
                         </div>
                         <div class="app-info">
                             <h3 class="sect-four-list-header">Banking App</h3>
-                            <p class="sekt-four-parag">App</p>
+                            <p class="sect-four-parag">App</p>
                         </div>
                     </li>
                     <li class="sect-four-list-item">
                         <div class="overlay-parent-sec-four">
-                            <img src="./images/Cashless-mobile.jpg" alt="Cashless paymant" />
-
+                            <picture>
+                                <sourse srcset="./images/cashless-dt.jpg 1x, ./images/cashless-dt@2x.jpg 2x"
+                                    media="(min-width: 1158px)" />
+                                <sourse srcset="./images/cashless-tablet.jpg 1x, ./images/cashless-tablet@2x.jpg 2x"
+                                    media="(min-width: 768px)" />
+                                <sourse srcset="./images/cashless-mobile.jpg 1x, ./images/cashless-mobile@2x.jpg 2x"
+                                    media="(max-width: 767px)" />
+                                <img src="./images/cashless-mobile.jpg" alt="Cashless paymant" />
+                            </picture>
                         </div>
                         <div class="app-info">
                             <h3 class="sect-four-list-header">Cashless Payment</h3>
@@ -272,8 +287,15 @@
                     </li>
                     <li class="sect-four-list-item">
                         <div class="overlay-parent-sec-four">
-                            <img src="./images/Meditation-mobile.jpg" alt="Meditation App" />
-
+                            <picture>
+                                <sourse srcset="./images/meditation-dt.jpg 1x, ./images/meditation-dt2@x.jpg 2x"
+                                    media="(min-width: 1158px)" />
+                                <sourse srcset="./images/meditation-tablet.jpg 1x, ./images/meditation-tablet2@x.jpg 2x"
+                                    media="(min-width: 768px)" />
+                                <sourse srcset="./image/meditation-mobile.jpg 1x, ./images/meditation-mobile@2x.jpg 2x"
+                                    media="(max-width: 767px)" />
+                                <img src="./images/meditation-mobile.jpg" alt="Meditation App" />
+                            </picture>
                         </div>
                         <div class="app-info">
                             <h3 class="sect-four-list-header">Meditation App</h3>
@@ -282,8 +304,15 @@
                     </li>
                     <li class="sect-four-list-item">
                         <div class="overlay-parent-sec-four">
-                            <img src="./images/Taxi-mobile.jpg" alt="Taxi Service" />
-
+                            <picture>
+                                <sourse srcset="./images/taxi-dt.jpg 1x, ./images/taxi-dt@2x.jpg 2x"
+                                    media="(min-width: 1158px)" />
+                                <sourse srcset="./images/taxi-tablet.jpg 1x, ./images/taxi-tablet@2x.jpg 2x"
+                                    media="(min-width: 768px)" />
+                                <sourse srcset="./image/taxi-mobile.jpg 1x, ./images/taxi-mobile@2x.jpg 2x"
+                                    media="(max-width: 767px)" />
+                                <img src="./images/taxi-mobile.jpg" alt="Taxi Service" />
+                            </picture>
                         </div>
                         <div class="app-info">
                             <h3 class="sect-four-list-header">Taxi Service</h3>
@@ -292,8 +321,15 @@
                     </li>
                     <li class="sect-four-list-item">
                         <div class="overlay-parent-sec-four">
-                            <img src="./images/Screen-mobile.jpg" alt="Screen Illustrations" />
-
+                            <picture>
+                                <sourse srcset="./images/screen-dt.jpg 1x, ./images/screen-dt@2x.jpg 2x"
+                                    media="(min-width: 1158px)" />
+                                <sourse srcset="./images/screen-tablet.jpg 1x, ./images/screen-tablet@2x.jpg 2x"
+                                    media="(min-width: 768px)" />
+                                <sourse srcset="./image/screen-mobile.jpg 1x, ./images/screen-mobile@2x.jpg 2x"
+                                    media="(max-width: 767px)" />
+                                <img src="./images/screen-mobile.jpg" alt="Screen Illustrations" />
+                            </picture>
                         </div>
                         <div class="app-info">
                             <h3 class="sect-four-list-header">Screen Illustrations</h3>
@@ -302,8 +338,15 @@
                     </li>
                     <li class="sect-four-list-item">
                         <div class="overlay-parent-sec-four">
-                            <img src="./images/Online-mobile.jpg" alt="Online Courses" />
-
+                            <picture>
+                                <sourse srcset="./images/online-dt.jpg 1x, ./images/online-dt@2x.jpg 2x"
+                                    media="(min-width: 1158px)" />
+                                <sourse srcset="./images/online-tablet.jpg 1x, ./images/online-tablet@2x.jpg 2x"
+                                    media="(min-width: 768px)" />
+                                <sourse srcset="./image/online-mobile.jpg 1x, ./images/online-mobile@2x.jpg 2x"
+                                    media="(max-width: 767px)" />
+                                <img src="./images/online-mobile.jpg" alt="Online Courses" />
+                            </picture>
                         </div>
                         <div class="app-info">
                             <h3 class="sect-four-list-header">Online Courses</h3>
