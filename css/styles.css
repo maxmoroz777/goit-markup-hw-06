@@ -364,7 +364,7 @@ img {
     margin-bottom: 72px;
 }
 
-.header-footer {
+.header-footer-social-media {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -467,12 +467,6 @@ img {
 .backdrop {
     display: block;
 }
-
-.is-open {
-    opacity: 0;
-    pointer-events: none;
-}
-
 
 /* MOBILE MENU STYLES */
 
@@ -627,11 +621,10 @@ img {
 
 /* SUBSCRIPTION FORM */
 
-/* .is-open
-    {
-    opacity: 1;
+.is-open {
+    opacity: 0;
     pointer-events: auto;
-} */
+}
 
 /* SUBSCRIPTION FORM */
 
@@ -1030,47 +1023,137 @@ img {
         margin: 0;
     }
 
-}
-
-/* SECTION FOUR TABLET */
 
 
-.section-four-list-mobile {
-    flex-flow: row;
-    flex-wrap: wrap;
-    row-gap: 72px;
-    column-gap: 24px;
-    max-width: 736px;
-}
-
-/* .container-sec-four {
-    min-width: 736px;
-}
- */
+    /* SECTION FOUR TABLET */
 
 
-@media only screen and (min-width: 1158px) {
-    .container {
+    .section-four-list-mobile {
+        flex-wrap: wrap;
+        flex-direction: row;
+        row-gap: 72px;
+        column-gap: 24px;
         max-width: 1157px;
+        margin: auto;
+        margin-bottom: 96px;
+    }
+
+    .sect-four-list-item {
+        margin: 0;
+    }
+
+    .container-sec-four {
+        margin: auto;
+        padding: 0;
+    }
+
+    /* FOOTER TABLET */
+
+
+    .footer-content {
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding: 0;
+        justify-content: left;
+    }
+
+    .container-footer {
+        margin-left: 108px;
+        margin-right: 24px;
 
     }
 
-    .section-one-mobile {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                rgba(46, 47, 66, 0.7)), url(../images/dack-bg-dt.jpg);
+    .logo-footer-mobile {
+        text-align: left;
     }
 
-    @media only screen and (min-resolution: 192dpi) and (min-width: 1158px) {
-        .section-one-mobile {
-            background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                    rgba(46, 47, 66, 0.7)), url(../images/dack-bg-dt@2x.jpg);
+    .footer-social-media {
+        margin-top: 96px;
+        margin-bottom: 104px;
+        height: 80px;
+    }
+
+
+
+    .subscribe-mobile {
+        margin-left: 108px;
+        margin-bottom: 96px;
+    }
+
+    .suscribe-form {
+        flex-flow: row;
+        gap: 24px;
+        max-width: 768px;
+        padding: 0;
+    }
+
+    .subscribe-par {
+        text-align: left;
+    }
+
+    .subscribe-btn,
+    .suscribe-email {
+        margin: 0;
+    }
+
+
+    /* MODAL TABLET */
+
+    .mobile-modal {
+        width: 408px;
+        min-height: 584px;
+        padding: 72px 24px 24px 24px;
+    }
+
+    .review-form {
+        width: 360px;
+    }
+
+    .review-form-input {
+        width: 360px;
+    }
+
+    .review-form-checkbox-label {
+        margin-top: 0;
+        justify-content: left;
+    }
+
+    .review-form-own-checkbox {
+        margin-top: 0;
+
+    }
+
+    /* MODAL TABLET */
+
+
+
+
+
+
+    @media only screen and (min-width: 1158px) {
+        .container {
+            max-width: 1157px;
+
         }
 
+        .section-one-mobile {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)), url(../images/dack-bg-dt.jpg);
+        }
+
+        @media only screen and (min-resolution: 192dpi) and (min-width: 1158px) {
+            .section-one-mobile {
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                        rgba(46, 47, 66, 0.7)), url(../images/dack-bg-dt@2x.jpg);
+            }
+
+        }
+
+
+
+
+
+
     }
-
-
-
-
-
 
 }
