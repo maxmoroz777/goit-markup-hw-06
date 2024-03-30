@@ -166,7 +166,10 @@ img {
     display: flex;
     flex-direction: column;
     gap: 72px;
+}
 
+.dscr-icon-block {
+    display: none;
 }
 
 .list-header-mobile {
@@ -943,9 +946,9 @@ img {
         font-size: 12px;
         line-height: 1.16667;
         letter-spacing: 0.04em;
-
-
     }
+
+    /* SECTION ONE TABLET */
 
     .section-one-mobile {
         min-height: 436px;
@@ -1132,22 +1135,95 @@ img {
 
     @media only screen and (min-width: 1158px) {
         .container {
-            max-width: 1157px;
-
+            min-width: 1158px;
         }
 
         .section-one-mobile {
             background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                     rgba(46, 47, 66, 0.7)), url(../images/dack-bg-dt.jpg);
+            max-height: 600px;
+            max-width: 1440px;
+            padding-top: 188px;
+            margin-bottom: 124px;
+
         }
 
         @media only screen and (min-resolution: 192dpi) and (min-width: 1158px) {
             .section-one-mobile {
                 background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                         rgba(46, 47, 66, 0.7)), url(../images/dack-bg-dt@2x.jpg);
+
             }
 
         }
+
+        .button-mobile {
+            margin-top: 48px;
+        }
+
+        .address-list {
+            flex-direction: row;
+            gap: 40px;
+        }
+
+        /* SECTION TWO DESKTOP */
+
+        .section-two-list-item {
+            max-width: 264px;
+        }
+
+        .section-two-list-mobile {
+            min-width: 1128px;
+            gap: 24px;
+            max-height: 224px;
+            margin: auto;
+            justify-content: space-between;
+        }
+
+        .list-header-mobile {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 1.2;
+        }
+
+        .description-mobile {
+            font-weight: 400;
+        }
+
+        .dscr-icon-block {
+            display: flex;
+            background-color: #f4f4fd;
+            justify-content: center;
+            border: 1px solid #8e8f99;
+            border-radius: 4px;
+            height: 112px;
+            margin-bottom: 8px;
+            align-items: center;
+        }
+
+        /* SECTION THREE DESKTOP */
+
+        .section-three-mobile {
+
+            padding-top: 120px;
+            padding-bottom: 120px;
+            padding-left: 0;
+            padding-right: 0;
+            margin: 0 auto;
+            margin-top: 120px;
+        }
+
+        /* SECTION FOUR DESKTOP */
+
+        .header-sect-four-mobile {
+            margin-top: 120px;
+        }
+
+        .section-four-list-mobile {
+            row-gap: 48px;
+            margin-bottom: 120px;
+        }
+
 
 
 
