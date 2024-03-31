@@ -503,10 +503,10 @@ img {
 
 /* NAV MENU */
 
-/* .is-open {
+.is-open {
     opacity: 1;
     visibility: visible;
-} */
+}
 
 /* NAV MENU */
 
@@ -577,7 +577,7 @@ img {
 
 .mobile-socials-networks {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     gap: 40px;
     margin-top: 0px;
 }
@@ -626,10 +626,10 @@ img {
 
 /* SUBSCRIPTION FORM */
 
-/* .is-open {
+.is-open {
     opacity: 1;
     pointer-events: auto;
-} */
+}
 
 /* SUBSCRIPTION FORM */
 
@@ -1080,8 +1080,6 @@ img {
         height: 80px;
     }
 
-
-
     .subscribe-mobile {
         margin-left: 108px;
         margin-bottom: 96px;
@@ -1101,6 +1099,10 @@ img {
     .subscribe-btn,
     .suscribe-email {
         margin: 0;
+    }
+
+    .header-footer-social-media {
+        text-align: left;
     }
 
 
@@ -1290,7 +1292,4 @@ img {
         margin: 0;
     }
 
-    .header-footer-social-media {
-        text-align: left;
-    }
 }
