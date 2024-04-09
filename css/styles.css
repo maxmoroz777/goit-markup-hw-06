@@ -107,17 +107,16 @@ img {
 
 .section-one-mobile {
     background: #2E2F42;
-    padding-top: 72px;
-    height: 600px;
+    padding: 72px 0;
+    /* height: 600px; */
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)), url(../images/dark-bg-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 320px;
-    max-height: 432px;
+    /* max-height: 432px; */
     background-position: center;
     margin: 0 auto;
-    margin-bottom: 96px;
 }
 
 @media only screen and (min-resolution: 192dpi) and (max-width: 767px) {
@@ -162,6 +161,10 @@ img {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
+.section-two-mobile {
+    padding: 96px 0;
+}
+
 .section-two-list-mobile {
     display: flex;
     flex-direction: column;
@@ -195,14 +198,9 @@ img {
 
 .section-three-mobile {
     background: #F4F4FD;
-    padding: 96px 28px;
-    margin-top: 96px;
-
+    padding: 96px 0;
 }
 
-.container-sec-three {
-    padding: 0;
-}
 
 .section-three-header {
     font-size: 36px;
@@ -223,7 +221,6 @@ img {
 }
 
 .section-three-list-header-mobile {
-    margin-top: 32px;
     margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
@@ -231,6 +228,10 @@ img {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+}
+
+.worker-info {
+    padding: 32px 0;
 }
 
 .section-three-parag {
@@ -247,7 +248,6 @@ img {
     display: flex;
     justify-content: center;
     gap: 24px;
-    margin-bottom: 32px;
 }
 
 .section-four-mobile {
@@ -255,13 +255,12 @@ img {
     margin: 0 auto;
 }
 
-
 .container-sec-four {
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: center;
-    padding-bottom: 96px;
+    padding: 96px 0;
 }
 
 .header-sect-four-mobile {
@@ -271,12 +270,11 @@ img {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
-    margin-top: 96px;
     margin-bottom: 72px;
 }
 
 .app-info {
-    padding: 0 16px;
+    padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
 }
@@ -297,17 +295,15 @@ img {
 }
 
 .sect-four-list-header {
-
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    margin-top: 32px;
+
 }
 
 .sect-four-parag {
-
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -329,12 +325,14 @@ img {
 .container-footer {
     width: 288px;
     margin: 0 auto;
+
 }
 
 .footer-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 96px 0;
 }
 
 
@@ -346,8 +344,9 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    align-items: center;
-
+    text-align: center;
+    display: block;
+    padding-bottom: 16px;
 }
 
 .logo-footer-mobile {
@@ -361,14 +360,16 @@ img {
 }
 
 .footer-parag-mobile {
-
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
     max-width: 264px;
-    margin-bottom: 72px;
+}
+
+.footer-social-media {
+    padding: 72px 0;
 }
 
 .header-footer-social-media {
@@ -383,7 +384,6 @@ img {
 
 .socials-networks-footer-mobile {
     gap: 16px;
-    margin-bottom: 72px;
 }
 
 
@@ -393,7 +393,6 @@ img {
 
 .subscribe-par {
     margin-bottom: 16px;
-
     font-weight: 500;
     font-style: 16px;
     line-height: 1.5;
@@ -442,7 +441,6 @@ img {
     border: none;
     border-radius: 4px;
     margin: auto;
-    margin-bottom: 96px;
 }
 
 .subscribe-btn:hover,
@@ -514,8 +512,10 @@ img {
 
 
 .mobile-menu-container {
-    position: relative;
-    padding-top: 72px;
+    padding: 72px 16px 40px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .mobile-menu-close-btn {
@@ -543,6 +543,7 @@ img {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    margin-bottom: auto;
 }
 
 .mobile-nav-list-link {
@@ -672,6 +673,7 @@ img {
 .modal-close-btn-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 
 .modal-close-btn:hover,
@@ -869,6 +871,7 @@ img {
 @media only screen and (min-width: 768px) {
     .container {
         max-width: 767px;
+        padding: 0 16px;
     }
 
     .menu-open-btn {
@@ -876,8 +879,7 @@ img {
     }
 
     .header {
-        padding-bottom: 0;
-        padding-top: 0;
+        padding: 0;
 
     }
 
@@ -885,7 +887,6 @@ img {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 0 auto;
     }
 
     .nav {
@@ -961,7 +962,6 @@ img {
                 rgba(46, 47, 66, 0.7)), url(../images/dark-bg-tablet.jpg);
         max-width: 768px;
         padding-top: 112px;
-        margin-bottom: 96px;
     }
 
     @media only screen and (min-resolution: 192dpi) and (min-width: 768px) {
@@ -984,14 +984,8 @@ img {
 
     /* SECTION TWO TABLET */
 
+
     .container-sec-two {
-        margin: auto;
-        padding: 0;
-    }
-
-    .section-two-mobile {
-
-        margin: auto;
         padding: 0;
     }
 
@@ -1043,7 +1037,6 @@ img {
         column-gap: 24px;
         max-width: 1157px;
         margin: auto;
-        margin-bottom: 96px;
     }
 
     .sect-four-list-item {
@@ -1052,11 +1045,21 @@ img {
 
     .container-sec-four {
         margin: auto;
-        padding: 0;
+        padding: 96px 0;
     }
 
     /* FOOTER TABLET */
 
+
+    .footer {
+        padding-top: 90px;
+        padding-left: 108px;
+        padding-bottom: 102px;
+    }
+
+    .footer-logo {
+        text-align: left;
+    }
 
     .footer-content {
         flex-wrap: wrap;
@@ -1066,9 +1069,11 @@ img {
     }
 
     .container-footer {
-        margin-left: 108px;
-        margin-right: 24px;
-
+        width: 264px;
+        text-align: left;
+        margin: 0;
+        padding-bottom: 72px;
+        padding-right: 24px;
     }
 
     .logo-footer-mobile {
@@ -1076,14 +1081,8 @@ img {
     }
 
     .footer-social-media {
-        margin-top: 96px;
-        margin-bottom: 104px;
+        padding: 0;
         height: 80px;
-    }
-
-    .subscribe-mobile {
-        margin-left: 108px;
-        margin-bottom: 96px;
     }
 
     .suscribe-form {
@@ -1142,22 +1141,22 @@ img {
 @media only screen and (min-width: 1158px) {
     .container {
         min-width: 1158px;
+
     }
 
     .section-one-mobile {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                rgba(46, 47, 66, 0.7)), url(../images/dack-bg-dt.jpg);
-        max-height: 600px;
+                rgba(46, 47, 66, 0.7)), url(../images/dark-bg-dt.jpg);
         max-width: 1440px;
-        padding-top: 188px;
-        margin-bottom: 124px;
-
+        min-height: 600px;
+        padding: 188px;
+        background-size: cover;
     }
 
     @media only screen and (min-resolution: 192dpi) and (min-width: 1158px) {
         .section-one-mobile {
             background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                    rgba(46, 47, 66, 0.7)), url(../images/dack-bg-dt@2x.jpg);
+                    rgba(46, 47, 66, 0.7)), url(../images/dark-bg-dt@2x.jpg);
 
         }
 
@@ -1209,25 +1208,30 @@ img {
 
     /* SECTION THREE DESKTOP */
 
+    .container-sec-three {
+        padding: 0;
+    }
+
     .section-three-mobile {
 
-        padding-top: 120px;
+        padding-top: 124px;
         padding-bottom: 120px;
-        padding-left: 0;
-        padding-right: 0;
         margin: 0 auto;
-        margin-top: 120px;
     }
 
     /* SECTION FOUR DESKTOP */
 
+    .container-sec-four {
+        padding: 120px 0;
+    }
+
     .header-sect-four-mobile {
-        margin-top: 120px;
+        margin: 0 auto;
     }
 
     .section-four-list-mobile {
         row-gap: 48px;
-        margin-bottom: 120px;
+        padding-top: 72px;
     }
 
     .overlay-parent-sec-four {
@@ -1255,12 +1259,14 @@ img {
 
     /* FOOTER DESKTOP */
 
+    .footer {
+        padding: 100px 0;
+    }
+
     .footer-content {
         display: flex;
         flex-flow: row;
         margin: 0 auto;
-        padding-top: 100px;
-        padding-bottom: 100px;
         align-items: baseline;
         max-width: 312px;
         justify-content: center;
@@ -1268,6 +1274,7 @@ img {
     }
 
     .container-footer {
+        padding: 0;
         margin: 0;
         margin-right: 120px;
     }

@@ -17,8 +17,8 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="container  page-header-container">
+    <header class="container header">
+        <div class="container page-header-container">
             <nav class="nav">
                 <a class="logo" href="./index.html">Web<span class="top-logo-end">Studio</span></a>
 
@@ -121,7 +121,10 @@
                 <h2 class="section-three-header">Our Team</h2>
                 <ul class="section-three-list">
                     <li class="section-three-list-item section-three-list-item-1">
-                        <img srcset="./images/mark@2x.jpg 2x" src="./images/mark.jpg" alt="Mark Guerrero" />
+                        <picture>
+                            <source srcset="./images/mark.jpg 1x, ./images/mark@2x.jpg 2x" />
+                            <img src="./images/mark.jpg" alt="Mark Guerrero" />
+                        </picture>
                         <div class="worker-info">
                             <h3 class="section-three-list-header-mobile">Mark Guerrero</h3>
                             <p class="section-three-parag">Product Designer</p>
@@ -151,15 +154,16 @@
                                         </svg></a>
                                 </li>
                             </ul>
-
                         </div>
                     </li>
                     <li class="section-three-list-item section-three-list-item-1">
-                        <img srcset="./images/tom@2x.jpg 2x" src="./images/tom.jpg" alt="Tom Ford" />
+                        <picture>
+                            <source srcset="./images/tom.jpg 1x, ./images/tom@2x.jpg 2x" />
+                            <img src="./images/tom.jpg" alt="Tom Ford" />
+                        </picture>
                         <div class="worker-info">
                             <h3 class="section-three-list-header-mobile">Tom Ford</h3>
                             <p class="section-three-parag">Frontend Developer</p>
-
                             <ul class="socials-networks">
                                 <li class="socials-networks-list">
                                     <a href="#" class="socials-networks-link">
@@ -190,11 +194,13 @@
                         </div>
                     </li>
                     <li class="section-three-list-item section-three-list-item-1">
-                        <img srcset="./images/camila@2x.jpg 2x" src="./images/camila.jpg" alt="Camila Garcia" />
+                        <picture>
+                            <source srcset="./images/camila.jpg 1x, ./images/camila@2x.jpg 2x" />
+                            <img src="./images/camila.jpg" alt="Camila Garcia" />
+                        </picture>
                         <div class="worker-info">
                             <h3 class="section-three-list-header-mobile">Camila Garcia</h3>
                             <p class="section-three-parag">Marketing</p>
-
                             <ul class="socials-networks">
                                 <li class="socials-networks-list">
                                     <a href="#" class="socials-networks-link">
@@ -221,15 +227,16 @@
                                         </svg></a>
                                 </li>
                             </ul>
-
                         </div>
                     </li>
                     <li class="section-three-list-item section-three-list-item-1">
-                        <img srcset="./images/daniel@2x.jpg 2x" src="./images/daniel.jpg" alt="Daniel Wilson" />
+                        <picture>
+                            <source srcset="./images/daniel.jpg 1x, ./images/daniel@2x.jpg 2x" />
+                            <img src="./images/daniel.jpg" alt="Daniel Wilson" />
+                        </picture>
                         <div class="worker-info">
                             <h3 class="section-three-list-header-mobile">Daniel Wilson</h3>
                             <p class="section-three-parag">UI Designer</p>
-
                             <ul class="socials-networks">
                                 <li class="socials-networks-list">
                                     <a href="#" class="socials-networks-link">
@@ -256,7 +263,6 @@
                                         </svg></a>
                                 </li>
                             </ul>
-
                         </div>
                     </li>
                 </ul>
@@ -382,9 +388,7 @@
         <footer class="footer">
             <div class="container footer-content">
                 <div class="container-footer">
-                    <div class="logo-footer-mobile">
-                        <a class="footer-logo" href="./index.html">Web<span class="footer-logo-end">Studio</span></a>
-                    </div>
+                    <a class="footer-logo" href="./index.html">Web<span class="footer-logo-end">Studio</span></a>
                     <p class="footer-parag-mobile">Increase the flow of customers and sales for your business with
                         digital
                         marketing & growth solutions.</p>
@@ -418,7 +422,6 @@
                         </li>
                     </ul>
                 </div>
-
                 <div class="subscribe-mobile">
                     <p class="subscribe-par">Subscribe</p>
                     <form class="suscribe-form">
@@ -428,20 +431,14 @@
                         </label>
                         <button class="subscribe-btn" type="submit">Subscribe
                             <svg width="24" height="24" class="subscribe-icon">
-                                <use href="./images/icons.svg#icon-send">
-
-                                </use>
+                                <use href="./images/icons.svg#icon-send"></use>
                             </svg>
                         </button>
-
                     </form>
-
                 </div>
             </div>
-
         </footer>
     </main>
-
 
     <!-- NAV MENU MOBILE -->
 
@@ -452,50 +449,43 @@
                     <use href="./images/icons.svg#icon-cross"></use>
                 </svg>
             </button>
-            <div class="mobile-nav-container">
-                <div class="mobile-nav">
-                    <ul class="mobile-nav-list">
-                        <li>
-                            <a class="mobile-nav-list-link mobile-nav-list-link-one" href="./index.html">Studio</a>
-                        </li>
-                        <li>
-                            <a class="mobile-nav-list-link" href="">Portfolio</a>
-                        </li>
-                        <li>
-                            <a class="mobile-nav-list-link" href="">Contacts</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div>
-                    <ul class="mobile-address-list">
-                        <li><a class="contacts-one" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
-                        <li><a class="contacts" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    </ul>
-                </div>
-            </div>
+            <ul class="mobile-nav-list">
+                <li>
+                    <a class="mobile-nav-list-link mobile-nav-list-link-one" href="./index.html">Studio</a>
+                </li>
+                <li>
+                    <a class="mobile-nav-list-link" href="">Portfolio</a>
+                </li>
+                <li>
+                    <a class="mobile-nav-list-link" href="">Contacts</a>
+                </li>
+            </ul>
+            <ul class="mobile-address-list">
+                <li><a class="contacts-one" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                <li><a class="contacts" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            </ul>
             <ul class="mobile-socials-networks">
                 <li class="socials-networks-list">
                     <a href="#" class="socials-networks-link">
-                        <svg width="16" height="16" class="svg-socials">
+                        <svg width="24" height="24" class="svg-socials">
                             <use href="./images/icons.svg#icon-instagram"></use>
                         </svg></a>
                 </li>
                 <li class="socials-networks-list">
                     <a href="#" class="socials-networks-link">
-                        <svg width="16" height="16" class="svg-socials">
+                        <svg width="24" height="24" class="svg-socials">
                             <use href="./images/icons.svg#icon-twitter"></use>
                         </svg></a>
                 </li>
                 <li class="socials-networks-list">
                     <a href="#" class="socials-networks-link">
-                        <svg width="16" height="16" class="svg-socials">
+                        <svg width="24" height="24" class="svg-socials">
                             <use href="./images/icons.svg#icon-facebook"></use>
                         </svg></a>
                 </li>
                 <li class="socials-networks-list">
                     <a href="#" class="socials-networks-link">
-                        <svg width="16" height="16" class="svg-socials">
+                        <svg width="24" height="24" class="svg-socials">
                             <use href="./images/icons.svg#icon-linkedin"></use>
                         </svg></a>
                 </li>
@@ -514,12 +504,9 @@
                 </svg>
             </button>
             <p class="review-form-desc">Leave your contacts and we will call you back</p>
-
             <form class="review-form">
-
                 <div class="review-form-wraper">
                     <label for="user-name" class="review-form-label">Name</label>
-
                     <div class="review-form-input-wraper">
                         <input class="review-form-input" type="text" name="user-name" id="user-name"
                             pattern="[a-zA-Zа-яА-ЯіІїЇєЄ']+" title="Olecsii" required>
@@ -528,7 +515,6 @@
                         </svg>
                     </div>
                 </div>
-
                 <div class="review-form-wraper">
                     <label for="user-tel" class="review-form-label">Phone</label>
                     <div class="review-form-input-wraper">
@@ -539,7 +525,6 @@
                         </svg>
                     </div>
                 </div>
-
                 <div class="review-form-wraper">
                     <label for="user-email" class="review-form-label">Email</label>
                     <div class="review-form-input-wraper">
@@ -549,15 +534,12 @@
                         </svg>
                     </div>
                 </div>
-
                 <div class="review-form-wraper review-form-wraper-comment">
                     <label for="user-comment" class="review-form-label">Comment</label>
                     <textarea class="review-form-masage" name="user-comment" id="user-comment" placeholder="Text input"
                         required></textarea>
                 </div>
-
                 <div class="review-form-checkbox-wraper">
-
                     <input type="checkbox" class="review-form-privacy-checbox visually-hidden" name="user-privacy"
                         value="true" id="user-privacy" required>
                     <label for="user-privacy" class="review-form-checkbox-label">
@@ -570,17 +552,12 @@
                             I accept the terms and conditions of the <a class="privacy-policy-link" href="">Privacy
                                 Policy</a>
                         </span>
-
                     </label>
                 </div>
-
                 <button class="review-form-submit-button" type="submit">Send</button>
-
             </form>
         </div>
-
     </div>
-
 </body>
 
 </html>
