@@ -161,6 +161,14 @@ img {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
+.button:hover {
+    background-color: #404BBF;
+}
+
+.button:focus {
+    background-color: #404BBF;
+}
+
 .section-two-mobile {
     padding: 96px 0;
 }
@@ -252,7 +260,7 @@ img {
 
 .section-four-mobile {
     background: #FFF;
-    margin: 0 auto;
+
 }
 
 .container-sec-four {
@@ -310,7 +318,6 @@ img {
     letter-spacing: 0.02em;
     color: #434455;
     margin-top: 8px;
-    margin-bottom: 32px;
 }
 
 .overlay-text {
@@ -319,7 +326,7 @@ img {
 
 .footer {
     background-color: #2e2f42;
-    margin: auto;
+    padding: 96px 0;
 }
 
 .container-footer {
@@ -332,7 +339,7 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 96px 0;
+
 }
 
 
@@ -346,7 +353,7 @@ img {
     color: #4d5ae5;
     text-align: center;
     display: block;
-    padding-bottom: 16px;
+    margin-bottom: 16px;
 }
 
 .logo-footer-mobile {
@@ -369,7 +376,7 @@ img {
 }
 
 .footer-social-media {
-    padding: 72px 0;
+    margin: 72px 0;
 }
 
 .header-footer-social-media {
@@ -870,8 +877,8 @@ img {
 
 @media only screen and (min-width: 768px) {
     .container {
-        max-width: 767px;
-        padding: 0 16px;
+        max-width: 768px;
+        padding: 0 15px;
     }
 
     .menu-open-btn {
@@ -913,7 +920,6 @@ img {
     }
 
     .nav-list-link-one {
-
         position: relative;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         color: #404bbf;
@@ -930,6 +936,14 @@ img {
         left: 0;
         bottom: -1px;
         position: absolute;
+    }
+
+    .nav-list-link:hover {
+        color: #404bbf;
+    }
+
+    .nav-list-item:focus {
+        color: #404bbf;
     }
 
     .address {
@@ -950,6 +964,17 @@ img {
         font-size: 12px;
         line-height: 1.16667;
         letter-spacing: 0.04em;
+        color: #434455;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+
+    .contacts:hover {
+        color: #404bbf;
+    }
+
+    .contacts:focus {
+        color: #404bbf;
     }
 
 
@@ -984,19 +1009,12 @@ img {
 
     /* SECTION TWO TABLET */
 
-
-    .container-sec-two {
-        padding: 0;
-    }
-
     .section-two-list-mobile {
         flex-flow: row;
         flex-wrap: wrap;
         max-width: 736px;
         row-gap: 72px;
         column-gap: 24px;
-        max-height: 356px;
-        margin: auto;
     }
 
     .section-two-list-item {
@@ -1026,7 +1044,6 @@ img {
     }
 
 
-
     /* SECTION FOUR TABLET */
 
 
@@ -1045,7 +1062,6 @@ img {
 
     .container-sec-four {
         margin: auto;
-        padding: 96px 0;
     }
 
     /* FOOTER TABLET */
@@ -1072,8 +1088,8 @@ img {
         width: 264px;
         text-align: left;
         margin: 0;
-        padding-bottom: 72px;
-        padding-right: 24px;
+        margin-bottom: 72px;
+        margin-right: 24px;
     }
 
     .logo-footer-mobile {
@@ -1083,6 +1099,7 @@ img {
     .footer-social-media {
         padding: 0;
         height: 80px;
+        margin: 0;
     }
 
     .suscribe-form {
@@ -1140,7 +1157,7 @@ img {
 
 @media only screen and (min-width: 1158px) {
     .container {
-        min-width: 1158px;
+        max-width: 1158px;
 
     }
 
@@ -1149,7 +1166,7 @@ img {
                 rgba(46, 47, 66, 0.7)), url(../images/dark-bg-dt.jpg);
         max-width: 1440px;
         min-height: 600px;
-        padding: 188px;
+        padding: 188px 0;
         background-size: cover;
     }
 
@@ -1162,6 +1179,10 @@ img {
 
     }
 
+    .nav-list {
+        margin-left: 76px;
+    }
+
     .button-mobile {
         margin-top: 48px;
     }
@@ -1169,6 +1190,14 @@ img {
     .address-list {
         flex-direction: row;
         gap: 40px;
+    }
+
+    .contacts {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
     }
 
     /* SECTION TWO DESKTOP */
@@ -1207,10 +1236,10 @@ img {
     }
 
     /* SECTION THREE DESKTOP */
-
+    /* 
     .container-sec-three {
         padding: 0;
-    }
+    } */
 
     .section-three-mobile {
 
@@ -1221,9 +1250,9 @@ img {
 
     /* SECTION FOUR DESKTOP */
 
-    .container-sec-four {
+    /* .container-sec-four {
         padding: 120px 0;
-    }
+    } */
 
     .header-sect-four-mobile {
         margin: 0 auto;
@@ -1268,7 +1297,6 @@ img {
         flex-flow: row;
         margin: 0 auto;
         align-items: baseline;
-        max-width: 312px;
         justify-content: center;
 
     }
